@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 import WhatsAppChat from './components/ui/WhatsAppChat';
+import ScrollToTop from './components/ui/ScrollToTop';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
@@ -66,6 +67,7 @@ function App() {
       </main>
       <Footer />
       <WhatsAppChat />
+  <ScrollToTop />
     </div>
   );
 }
