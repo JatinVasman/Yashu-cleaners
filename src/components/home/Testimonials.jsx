@@ -9,7 +9,7 @@ const Testimonials = () => {
       rating: 5,
       text: "Yashu Cleaners ke products use karke lagta hai jaise ghar ne nayi jaan le li ho. Floors itne shiny ho gaye ki apna reflection dekh ke khud surprise ho gayi",
       location: "Bulandshahr",
-      image: "/public/images/review/kavita-teotia.jpg"
+  image: "images/review/kavita-teotia.jpg"
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const Testimonials = () => {
       rating: 5,
       text: "Pehle guests aate the toh main pehle hi bol deti thi 'sorry, thoda mess hai'. Ab guests khud bolte hain 'wah, kitna clean hai!'",
       location: "Delhi",
-      image: "/public/images/review/priya-kumari.jpg"
+  image: "images/review/priya-kumari.jpg"
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ const Testimonials = () => {
       rating: 5,
       text: "Bathroom cleaner itna powerful hai ki purane stains bhi chhup nahi paaye. Ab toh lagta hai hotel washroom ka feel aa raha hai",
       location: "Noida",
-      image: "/public/images/review/harsh-chaudhary.jpg"
+  image: "images/review/harsh-chaudhary.jpg"
     },
     {
       id: 4,
@@ -36,7 +36,7 @@ const Testimonials = () => {
       rating: 5,
       text: "Yashu Cleaner meri shop ka fast moving product ban gaya hai — halki fragrance aur zabardast safai ki wajah se customers baar-baar lene aate hain.Ek baar try karne ke baad sabki permanent demand ban jaati hai!",
       location: "Bulandshahr",
-      image: "/public/images/review/sharma-kiarna-store.jpg"
+  image: "images/review/sharma-kiarna-store.jpg"
     },
     {
       id: 5,
@@ -45,7 +45,7 @@ const Testimonials = () => {
       rating: 5,
       text: "Maine apne gym ki safaai ke liye Yashu Cleaner use karna start kiya hai — floors aur equipment dono ka shine clearly better ho gaya hai.Members bhi cleanliness notice karte hain, isliye ab Yashu Cleaner meri daily maintenance routine ka regular part ban chuka hai.",
       location: "Bulandshahr",
-      image: "/public/images/review/kharak-gym.jpg"
+  image: "images/review/kharak-gym.jpg"
     }
   ];
 
@@ -72,7 +72,7 @@ const Testimonials = () => {
             <div key={testimonial.id} className="testimonial-card">
               <div className="testimonial-image">
                 {testimonial.image ? (
-                  <img src={testimonial.image} alt={testimonial.name} className="customer-image" />
+                  <img src={`${import.meta.env.BASE_URL}${testimonial.image}`} alt={testimonial.name} className="customer-image" />
                 ) : (
                   <div className="image-placeholder">
                     <span>👤</span>

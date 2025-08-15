@@ -157,7 +157,7 @@ const AboutSection = () => {
               </p>
             </div>
             <div className="about-hero-image">
-              <img src="/images/logo/WebLogo.jpg" alt="Yashu Cleaners Founder" />
+              <img src={`${import.meta.env.BASE_URL}images/logo/WebLogo.jpg`} alt="Yashu Cleaners Founder" />
               <div className="founder-info">
                 <h4>Founded with Vision</h4>
                 <p>Committed to excellence since day one</p>

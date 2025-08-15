@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section footer-brand">
             <div className="footer-logo-container">
-              <img src="/images/logo/WebLogo.jpg" alt="Yashu Cleaners" className="footer-logo-image" />
+              <img src={`${import.meta.env.BASE_URL}images/logo/WebLogo.jpg`} alt="Yashu Cleaners" className="footer-logo-image" />
             </div>
             <p>Your trusted partner for all cleaning solutions.</p>
           </div>

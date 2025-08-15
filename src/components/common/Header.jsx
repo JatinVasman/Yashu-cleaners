@@ -18,7 +18,7 @@ const Header = () => {
       <div className="container">
         <div className="logo">
           <a href="/">
-            <img src="/images/logo/WebLogo.jpg" alt="Yashu Cleaners" className="logo-image" />
+            <img src={`${import.meta.env.BASE_URL}images/logo/WebLogo.jpg`} alt="Yashu Cleaners" className="logo-image" />
           </a>
         </div>
         <nav>

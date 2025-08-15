@@ -36,7 +36,7 @@ const WhatsAppChat = () => {
             <div className="whatsapp-header">
               <div className="whatsapp-header-info">
                 <div className="whatsapp-avatar">
-                  <img src="/images/logo/WebLogo.jpg" alt="Yashu Cleaners" />
+                  <img src={`${import.meta.env.BASE_URL}images/logo/WebLogo.jpg`} alt="Yashu Cleaners" />
                 </div>
                 <div className="whatsapp-header-text">
                   <h4>Yashu Cleaners</h4>

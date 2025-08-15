@@ -9,7 +9,7 @@ const HeroSection = () => {
         <button className="cta-button">View Products</button>
       </div>
       <div className="hero-image">
-        <img src="/images/hero/hero-image.jpg" alt="Cleaning Products" />
+  <img src={`${import.meta.env.BASE_URL}images/hero/hero-image.jpg`} alt="Cleaning Products" />
       </div>
     </section>
   );
