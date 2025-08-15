@@ -15,7 +15,7 @@
 
 /* Global Body Adjustment for Fixed Header */
 body {
-  padding-top: 120px; /* Adjust based on header height */
+  padding-top: var(--header-height, 120px); /* Adjust based on header height */
 }
 
 /* Header Styles */
@@ -114,15 +114,16 @@ body {
 
 /* Footer Styles */
 .footer {
-  background: linear-gradient(135deg, var(--accent-gray-start) 0%, var(--accent-gray-end) 100%);
-  color: #000000 !important;
-  padding: 1rem 0 0.3rem;
-  margin-top: 1.5rem;
+  /* Match page background for consistent look */
+  background: linear-gradient(135deg, #faf9f7 0%, #f0ede7 100%);
+  color: #333;
+  padding: 2rem 0 1rem;
+  margin-top: 0;
 }
 
 /* Ensure all footer text is black */
 .footer * {
-  color: #000000 !important;
+  color: inherit;
 }
 
 .footer-content {
@@ -134,7 +135,7 @@ body {
 
 .footer-section h3,
 .footer-section h4 {
-  color: #000000;
+  color: #2c3e50;
   margin-bottom: 0.5rem;
 }
 
@@ -147,18 +148,18 @@ body {
 }
 
 .footer-section a {
-  color: #000000;
+  color: #3498db;
 }
 
 .footer-section a:hover {
-  color: #333333;
+  color: #2980b9;
 }
 
 .footer-bottom {
   text-align: center;
   padding-top: 1rem;
-  border-top: 1px solid #4a4a4a;
-  color: #000000;
+  border-top: none;
+  color: #666;
 }
 
 .footer-brand {
@@ -172,7 +173,7 @@ body {
 .footer-brand p,
 .footer-section p,
 .footer-bottom p {
-  color: #000000 !important;
+  color: inherit;
 }
 
 .footer-logo-container {
@@ -1628,6 +1629,7 @@ body {
   line-height: 1.1;
   margin: 0;
   color: #2D5016;
+  text-align: left;
 }
 
 .hero-headline span {
@@ -1643,23 +1645,23 @@ body {
 }
 
 .hero-headline .line-1 {
-  font-weight: 500;
+  font-weight: 700; /* bold only the first line */
   transition-delay: 0.1s;
 }
 
 .hero-headline .line-2 {
-  font-weight: 700;
+  font-weight: 400; /* normal weight */
   color: var(--gray-700);
   transition-delay: 0.2s;
 }
 
 .hero-headline .line-3 {
-  font-weight: 500;
+  font-weight: 400; /* normal weight */
   transition-delay: 0.3s;
 }
 
 .hero-headline .line-4 {
-  font-weight: 600;
+  font-weight: 400; /* normal weight */
   transition-delay: 0.4s;
 }
 
@@ -1671,6 +1673,7 @@ body {
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s ease 0.5s;
+  text-align: center;
 }
 
 .hero-subtext.animate-in {
@@ -1685,7 +1688,7 @@ body {
   color: #555558 !important;
   margin-bottom: 2rem;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
 }
 
 .trust-indicators {

@@ -38,7 +38,7 @@ const Hero = () => {
           <div className="hero-left">
             <div className={`hero-headline ${isVisible ? 'animate-in' : ''}`}>
               <h1>
-                <span className="line-1">Stay fresh, stay clean…</span>
+                <span className="line-1">Stay fresh, Stay clean</span>
                 <span className="line-2 highlight">because germs</span>
                 <span className="line-3">don't take</span>
                 <span className="line-4">holidays</span>
@@ -51,7 +51,7 @@ const Hero = () => {
               <p className="hero-description">
                 Your one-stop solution for all professional cleaning needs. 
                 From premium cleaning liquids to essential tools, we provide 
-                everything your business requires to maintain the highest 
+                everything you need to maintain the highest 
                 standards of cleanliness and hygiene.
               </p>
               

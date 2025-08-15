@@ -203,7 +203,7 @@
     description: "Professional glass cleaning wipers set",
     price: 550,
     category: "Cleaning Tools",
-    image: "/images/products/glass-wipers.jpeg",
+    image: "/images/products/glass-wipers.jpg",
     inStock: true,
     rating: 4.8,
     reviews: 23

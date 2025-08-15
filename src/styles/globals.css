@@ -13,6 +13,11 @@ body {
   background-color: #f8f9fa;
 }
 
+/* Prevent content from being obscured under the fixed header */
+main, .home-page, .products-page, .contact-page, .about-page {
+  min-height: calc(100vh - var(--header-height, 120px));
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;

@@ -31,7 +31,7 @@ const Testimonials = () => {
     },
     {
       id: 4,
-      name: "Sharma Kiarna Store",
+      name: "Sharma Kirana Store",
       business: "Shop Keeper",
       rating: 5,
       text: "Yashu Cleaner meri shop ka fast moving product ban gaya hai — halki fragrance aur zabardast safai ki wajah se customers baar-baar lene aate hain.Ek baar try karne ke baad sabki permanent demand ban jaati hai!",
