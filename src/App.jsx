@@ -28,15 +28,19 @@ function App() {
   // Simple routing without React Router (for basic setup)
   React.useEffect(() => {
     const handleNavigation = (e) => {
-      if (e.target.tagName === 'A' && e.target.getAttribute('href')) {
+      const anchor = e.target.closest && e.target.closest('a');
+      if (!anchor) return;
+      const href = anchor.getAttribute('href');
+      if (!href) return;
+
+      // Only intercept internal app links (e.g., "/", "/products", "/contact")
+      if (href.startsWith('/')) {
         e.preventDefault();
-        const href = e.target.getAttribute('href');
-        if (href.startsWith('/')) {
-          const page = href.slice(1) || 'home';
-          setCurrentPage(page);
-          window.history.pushState(null, '', href);
-        }
+        const page = href.slice(1) || 'home';
+        setCurrentPage(page);
+        window.history.pushState(null, '', href);
       }
+      // Do not prevent default for mailto:, tel:, http(s): or other protocols
     };
 
     document.addEventListener('click', handleNavigation);
