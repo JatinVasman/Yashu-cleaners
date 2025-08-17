@@ -5,7 +5,7 @@
     description: "Professional grade white phenyl for commercial use",
     price: 130,
     category: "Cleaning Liquids",
-    image: "/images/products/white-phenyl.jpg",
+    image: "/images/products/white-phenyl.webp",
     inStock: true,
     rating: 4.5,
     reviews: 45
@@ -82,7 +82,7 @@
     description: "Professional dust control solution",
     price: 260,
     category: "Specialty Cleaners",
-    image: "/images/products/dust-control.jpg",
+    image: "/images/products/dust-control.png",
     inStock: true,
     rating: 4.5,
     reviews: 31
@@ -451,10 +451,10 @@
   },
   {
     id: 42,
-    name: "ITEMS STICKS",
+    name: "INTENSE STICKS",
     price: 50,
     category: "Cleaning Tools",
-    image: "/images/products/items-sticks.jpeg",
+    image: "/images/products/intense-sticks.png",
     inStock: true,
     rating: 4.1,
     reviews: 36
